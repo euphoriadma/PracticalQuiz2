@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PracticalQuiz2 - Garden Gazebo Scene</title>
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene shadow="type:pcfsoft">
+
+  <!-- SKY -->
+  <a-sky color="#87CEEB"></a-sky>
+
+  <!-- GRASS -->
+  <a-plane rotation="-90 0 0" width="50" height="50" color="#228B22"></a-plane>
+
+  <!-- STRAIGHT WALKWAY -->
+  <a-box position="0 0.02 2.5" width="1.5" height="0.02" depth="8" color="#D2B48C"></a-box>
+  <a-box position="0.75 0.03 2.5" width="0.05" height="0.02" depth="8" color="#8B7355"></a-box>
+  <a-box position="-0.75 0.03 2.5" width="0.05" height="0.02" depth="8" color="#8B7355"></a-box>
+
+  <!-- GAZEBO FLOOR -->
+  <a-box position="0 0.2 -1.5" width="4" height="0.1" depth="4" color="#8B7355"></a-box>
+
+  <!-- PILLARS -->
+  <a-cylinder position="1.5 2 -0.5" radius="0.15" height="4" color="#654321"></a-cylinder>
+  <a-cylinder position="-1.5 2 -0.5" radius="0.15" height="4" color="#654321"></a-cylinder>
+  <a-cylinder position="1.5 2 -2.5" radius="0.15" height="4" color="#654321"></a-cylinder>
+  <a-cylinder position="-1.5 2 -2.5" radius="0.15" height="4" color="#654321"></a-cylinder>
+
+  <!-- ROOF -->
+  <a-cone position="0 4.5 -1.5" radius-bottom="2.5" height="2.5" color="#98FF98"></a-cone>
+
+  <!-- TABLE -->
+  <a-entity id="table-center" position="0 0.3 -1.5">
+    <a-box position="0 0.4 0" width="1.2" height="0.08" depth="0.8" color="#4A4A4A"></a-box>
+    <a-cylinder position="0.5 0.2 0.3" radius="0.03" height="0.4" color="#2C2C2C"></a-cylinder>
+    <a-cylinder position="-0.5 0.2 0.3" radius="0.03" height="0.4" color="#2C2C2C"></a-cylinder>
+    <a-cylinder position="0.5 0.2 -0.3" radius="0.03" height="0.4" color="#2C2C2C"></a-cylinder>
+    <a-cylinder position="-0.5 0.2 -0.3" radius="0.03" height="0.4" color="#2C2C2C"></a-cylinder>
+
+    <!-- MILO TIN -->
+    <a-cylinder position="-0.3 0.46 0.1" radius="0.08" height="0.15" color="#228B22"></a-cylinder>
+    <a-cylinder position="-0.3 0.53 0.1" radius="0.085" height="0.02" color="#196619"></a-cylinder>
+
+    <!-- MILK TIN -->
+    <a-cylinder position="0.3 0.46 0.1" radius="0.08" height="0.15" color="#F5F5DC"></a-cylinder>
+    <a-cylinder position="0.3 0.53 0.1" radius="0.085" height="0.02" color="#E0D9B5"></a-cylinder>
+
+    <!-- CUP 1 -->
+    <a-cylinder position="0 0.44 -0.2" radius="0.05" height="0.08" color="#4169E1"></a-cylinder>
+    <a-torus position="0.06 0.44 -0.2" radius="0.05" radius-tubular="0.01" rotation="0 0 90" color="#4169E1"></a-torus>
+
+    <!-- CUP 2 -->
+    <a-cylinder position="0 0.44 0.25" radius="0.05" height="0.08" color="#DC143C"></a-cylinder>
+    <a-torus position="0.06 0.44 0.25" radius="0.05" radius-tubular="0.01" rotation="0 0 90" color="#DC143C"></a-torus>
+  </a-entity>
+
+  <!-- CHAIRS -->
+  <a-entity position="0.9 0.2 -1.5">
+    <a-box position="0 0.25 0" width="0.4" height="0.05" depth="0.4" color="#8B4513"></a-box>
+    <a-box position="0 0.45 -0.175" width="0.4" height="0.4" depth="0.05" color="#8B4513"></a-box>
+    <a-cylinder position="0.175 0.125 0.175" radius="0.025" height="0.25" color="#5A2E0F"></a-cylinder>
+    <a-cylinder position="-0.175 0.125 0.175" radius="0.025" height="0.25" color="#5A2E0F"></a-cylinder>
+    <a-cylinder position="0.175 0.125 -0.175" radius="0.025" height="0.25" color="#5A2E0F"></a-cylinder>
+    <a-cylinder position="-0.175 0.125 -0.175" radius="0.025" height="0.25" color="#5A2E0F"></a-cylinder>
+  </a-entity>
+
+  <a-entity position="-0.6 0.2 -1.5" rotation="0 90 0">
+    <a-box position="0 0.25 0" width="0.4" height="0.05" depth="0.4" color="#8B4513"></a-box>
+    <a-box position="0 0.45 -0.175" width="0.4" height="0.4" depth="0.05" color="#8B4513"></a-box>
+    <a-cylinder position="0.175 0.125 0.175" radius="0.025" height="0.25" color="#5A2E0F"></a-cylinder>
+    <a-cylinder position="-0.175 0.125 0.175" radius="0.025" height="0.25" color="#5A2E0F"></a-cylinder>
+    <a-cylinder position="0.175 0.125 -0.175" radius="0.025" height="0.25" color="#5A2E0F"></a-cylinder>
+    <a-cylinder position="-0.175 0.125 -0.175" radius="0.025" height="0.25" color="#5A2E0F"></a-cylinder>
+  </a-entity>
+
+  <!-- FLOWERS -->
+  <a-cylinder position="1.2 0.05 -2" radius="0.1" height="0.2" color="#FF69B4"></a-cylinder>
+  <a-cylinder position="-1.2 0.05 -2" radius="0.1" height="0.2" color="#FF69B4"></a-cylinder>
+
+  <!-- CAMERA WITH KEYBOARD CONTROL -->
+  <a-entity>
+    <a-camera id="main-camera" wasd-controls-enabled="true" look-controls-enabled="true"
+              position="0 1.5 6"
+              look-at="#table-center">
+    </a-camera>
+  </a-entity>
+
+  <!-- LIGHTS -->
+  <a-light type="ambient" intensity="0.6"></a-light>
+  <a-light type="directional" position="-5 10 5" intensity="0.8"></a-light>
+
+</a-scene>
+</body>
+</html>
